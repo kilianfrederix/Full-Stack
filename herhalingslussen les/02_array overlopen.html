@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let merken = [];
+        const aantal = prompt("Hoeveel automerken wil je ingeven?");
+        for (i = 1; i <= aantal; i++ ) {
+            merken.push(prompt(`Geef merk nr ${i} in.`))
+        }
+        document.write("<p>u gaf de volgende merken in:</p>")
+        for (i = 0; i <merken.length; i++) {
+            document.write(`<p>${i+1}:${merken[i]}</p>`);
+        }
+    </script>
+</body>
+</html>

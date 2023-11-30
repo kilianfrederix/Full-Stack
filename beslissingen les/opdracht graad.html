@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let cijfer = prompt("Voer het aantal punten in met 2 cijfers:");
+
+if (cijfer === null) {
+    document.write("U heeft geannuleerd!");
+} else if (cijfer.length == 0) {
+    document.write("U heeft niets ingegeven!");
+} else if (isNaN(cijfer) || cijfer.length !== 2 || cijfer < 0 || cijfer > 100) { 
+    document.write("Dit is geen nummer!");
+} else {
+    let graad = parseInt(cijfer);
+
+    if (graad >= 95) {
+        document.write("De graad is: A+");
+    } else if (graad >= 90) {
+        document.write("De graad is: A");
+    } else if (graad >= 80) {
+        document.write("De graad is: B");
+    } else if (graad >= 70) {
+        document.write("De graad is: C");
+    } else if (graad >= 60) {
+        document.write("De graad is: D");
+    } else if (graad >= 50) {
+        document.write("De graad is: E");
+    } else {
+        document.write("De graad is: F");
+    }
+}
+    </script>
+</body>
+</html>

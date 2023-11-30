@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // oef 1
+        const namen = ["Jan", "Piet", "Joris"];
+        document.write(`<p>${namen}</p>`)
+
+        // oef 2
+        const weekdagen = []
+        weekdagen[0] = "Maandag"
+        weekdagen[1] = "Dinsdag"
+        weekdagen[2] = "Woensdag"
+        weekdagen[3] = "Donderdag"
+        weekdagen[4] = "Vrijdag"
+        weekdagen[5] = "Zaterdag"
+        weekdagen[6] = "Zondag"
+        document.write(`<p>${weekdagen}</p>`)
+
+        // oef 3 
+        const htmlTags = ["html", "p", "div"];
+        document.write(`<p>${htmlTags}</p>`);
+        const extraTag = prompt("ken je nog een tag?");
+        htmlTags.push(extraTag);
+        document.write(`<p>${htmlTags}</p>`);
+
+        // oef 4
+        const string = "JavaScript is een scriptingtaal";
+        const aangepastestring = string.split(" ");
+        document.write(`<p>${aangepastestring.length}</p>`)
+
+        // oef 5
+        const taal = ["JavaScript", "PHP"]
+        const javascript = taal.indexOf("javascript")
+        document.write(`<p>${javascript}</p>`)
+        const JavaScript = taal.indexOf("JavaScript")
+        document.write(`<p>${JavaScript}</p>`)
+
+
+
+
+        let cijfers = [1, 2, 3, 4, 5, 6, 7];
+        document.write(`<p>${cijfers.length}</p>`)
+
+
+
+        let cijfers2 = [1, 2, 3];
+        cijfers2.push(4);
+        cijfers2.push(5);
+        document.write(`<p>${cijfers2}</p>`)
+
+
+        let array1 = ["Jan", "Piet", "An", "Cindy"];
+        array1.sort().reverse();
+        document.write(`<p>${array1}</p>`)
+    </script>
+</body>

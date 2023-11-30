@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const radius_cylinder1 = prompt("wat is de radius van cylinder 1?");
+        const hoogte_cylinder1 = prompt("wat is de hoogte van cylinder 1?");
+        const aantal_cylinder1 = prompt("geef het aantal decimalen voor cylinder 1.");
+
+        const radius_cylinder2 = prompt("wat is de radius van cylinder 2?");
+        const hoogte_cylinder2 = prompt("wat is de hoogte van cylinder 2?");
+        const aantal_cylinder2 = prompt("geef het aantal decimalen voor cylinder 2.");
+
+
+        const volume_cylinder1 = 3.1415 * parseFloat(radius_cylinder1).toFixed(aantal_cylinder1) * parseFloat(radius_cylinder1).toFixed(aantal_cylinder1) * parseFloat(hoogte_cylinder1).toFixed(aantal_cylinder1)
+        const volume_cylinder2 = 3.1415 * parseFloat(radius_cylinder2).toFixed(aantal_cylinder2) * parseFloat(radius_cylinder2).toFixed(aantal_cylinder2) * parseFloat(hoogte_cylinder2).toFixed(aantal_cylinder2)
+        const totale_volume = volume_cylinder1 + volume_cylinder2
+
+        document.write(`<p>Het volume van de eerste cilinder met radius ${radius_cylinder1} en ${hoogte_cylinder1} en aantal decimalen ${aantal_cylinder1} is: ${parseFloat(radius_cylinder1).toFixed(aantal_cylinder1)} en ${parseFloat(hoogte_cylinder1).toFixed(aantal_cylinder1)}. Het volume is dan : ${volume_cylinder1.toFixed(aantal_cylinder1)}</p>`)
+        document.write(`<p>Het volume van de tweede cilinder met radius ${radius_cylinder2} en ${hoogte_cylinder2} en aantal decimalen ${aantal_cylinder2} is: ${parseFloat(radius_cylinder2).toFixed(aantal_cylinder2)} en ${parseFloat(hoogte_cylinder2).toFixed(aantal_cylinder2)}. Het volume is dan : ${volume_cylinder2.toFixed(aantal_cylinder2)}</p>`)
+        document.write(`Samen is dit een naar onder afgeronde volume van ${totale_volume.toFixed(0)}`)
+    </script>
+</body>
+</html>

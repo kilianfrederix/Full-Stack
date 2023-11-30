@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const email = prompt("Wat is je email?");
+
+        if (email == null) {
+            document.write(`<p>U heeft geanulleerd</p>`);
+        } else if (email.length == 0) {
+            document.write(`<p>U heeft niks ingegeven</p>`);
+        } else if (email.indexOf("@") === -1 || (email.indexOf(".") ===-1 || email.indexOf(" ") !== -1)) {
+            document.write("Dit lijkt geen correct emailadres te zijn!");
+        } else if (email.indexOf("@") < 2) {
+            document.write("Er moeten minstens 2 tekens voor de @ staan.");
+        } else {
+            document.write("Ziet er goed uit!");
+        }
+    </script>
+</body>
+</html>

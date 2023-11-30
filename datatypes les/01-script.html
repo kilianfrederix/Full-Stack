@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const getal = prompt("hoeveel is de prijs?");
+        console.log(typeof getal);
+        const aantal = prompt ("geef het aantal");
+        const totaal = getal*aantal
+        document.write(`De totale prijs is ${totaal}`);
+
+
+        const getal1 = 3.1415;
+        const getal2 = 6.1344;
+        const uitkomst = getal1.toFixed(2) + getal2.toFixed(2);
+        document.write(uitkomst)
+
+
+        const getal3 = 125;
+        document.write(`<p>getal is geen nummer: ${isNaN(getal3)}</p > `);
+    </script>
+</body>
+
+</html>

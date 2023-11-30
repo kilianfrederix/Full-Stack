@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tekst = "dit is een voorbeeldzin"
+        document.write(`<p>${tekst.substring(0 , 1).toUpperCase()}${tekst.substring(1, tekst.length)}.</p>`)
+
+
+        let tekst2 = "Hoe kan je met JavaScript een deel van de tekst selecteren?";
+        let scriptTaal = tekst2.substring(15 , 25);
+        document.write(`Ik heb de scripttaal uit de tekst gehaald: ${scriptTaal}`);
+
+
+        let alfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let locatie = alfabet.indexOf("nop");
+        document.write(locatie)
+    </script>
+</body>
+</html>

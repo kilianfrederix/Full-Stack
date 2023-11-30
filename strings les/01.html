@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // VB 1
+        const tekstvariabele = "Dit is een tekst";
+        const lengte = tekstvariabele.length;
+        document.write(`<p>De lengte van de variabele ' ${tekstvariabele}' is : ${lengte} </p>`);
+
+
+        // VB 2
+        let tekstvariabele2 = "Dit is een tekst";
+        const hoofdletters = tekstvariabele2.toUpperCase();
+        document.write(`<p>De tekst ' ${tekstvariabele2}' omgezet in hoofdletters is : ${hoofdletters} `);
+
+
+        // VB 3 
+        const tekstvariabele3 = "0123456789";
+        document.write(`<p>substring(4,9) van de tekst '${tekstvariabele3}' is : ${tekstvariabele3.substring(4, 9)} </p>`);
+
+
+        // VB 4
+        const alfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        console.log(alfabet.substring(0, 4));
+        console.log(alfabet.substring(10, 12));
+        console.log(alfabet.substring(12, 10));
+        console.log(alfabet.substring(0, 26));
+        console.log(alfabet.substring(26, 26));
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function schrijf(ontvangen) {
+        //     document.write(`<p>${ontvangen}</p>`);
+        // }
+        // schrijf("Nu moet ik niet zoveel code meer intikken");
+
+
+        let namen = ["Jan", "Piet", "Joris"];
+
+        function tooneersteTekenvanElkElement(ontvangen ) {
+            let lengte = ontvangen.length ;
+            document.write(`<p> Het eerste teken van</p>`);
+            for (let i = 0; i < lengte; i++) {
+                document.write(`<p> (${i + 1}) ${ontvangen[i]} is ${ontvangen[i].charAt(0)} </p>`);
+            }
+        }
+
+        tooneersteTekenvanElkElement(namen);
+    </script>
+</body>
+</html>

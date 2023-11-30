@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // oef 1
+        const voornaam = "Java";
+        const achternaam = "Script";
+        const naam = voornaam + " " + achternaam;
+        document.write(`<p>Hallo ${naam}.</p>`);
+
+        // oef 2
+        const lengte_naam = voornaam.length + achternaam.length;
+        document.write(`<p>Jouw naam bevat ${lengte_naam} karkaters.</p>`);
+
+        // oef 3
+        const filename ="javaScriptFrameWork";
+        document.write(`<p>De originele filename is: '${filename}'</p>`);
+
+        // oef 4
+        const filename_lowercase = filename.toLowerCase();
+        document.write(`<p>De filename kan beter in kleine letters getypt worden, dus: '${filename_lowercase}'</p>`);
+
+        // oef 5
+        const filename_first_word = filename_lowercase.substring(0 , 10 );
+        const filename_last_word = filename_lowercase. substring(10 , 19 );
+        document.write(`<p>Als je '${filename_lowercase}' opsplitst, krijg je: '${filename_first_word}' en '${filename_last_word}'.</p>`);
+
+        // oef 6
+        const filename_5de_karakter = filename.charAt(5);
+        document.write(`<p>Het zesde karakter (volgens mensen) in '${filename_lowercase}'' is: '${filename_5de_karakter}'.</p>`);
+
+        // oef 7
+        const email = "jan.klaassen@mail.com";
+        const locatie_speciaal_teken = email.indexOf("@");
+        document.write(`<p>In '${email}' staat de @ op positie: ${locatie_speciaal_teken}</p>`);
+
+        // oef 8
+        const naam_email = email.substring(0, email.indexOf("@"));
+        document.write(`<p>De naam is dus: '${naam_email}'</p>`);
+
+        // oef 9
+        const tekst = "Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()";
+        const afgekapte_tekst = tekst.substr(0 , 8);
+        document.write(`<p>De originele tekst: '${tekst}' wordt dan: '${afgekapte_tekst}'</p>`);
+    </script>
+</body>
+</html>

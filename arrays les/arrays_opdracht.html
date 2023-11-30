@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // part 1
+        const maanden =["januari", "februari", "maart"];
+        maanden[3] = "april";
+        maanden[4] = "mei";
+        maanden[5] = "juni";
+        maanden.push("juli");
+        maanden.push("augustus", "september", "oktober", "november", "december");
+        document.write(`<p>${maanden}</p>`);
+        document.write(`<p>Er zijn ${maanden.length} in de array.</p>`);
+        const march = maanden.indexOf("march");
+        document.write(`<p>De maand "march" bevind zich in de array op positie: ${march}</p>`);
+
+        // part 2
+        const namen = ["Erik", "Sofie", "Adam", "Zorro"];
+        namen.sort();
+        document.write(`<p>De gesorteerde namen zijn: ${namen}</p>`);
+        const naam = prompt("welke naam wilt u zoeken?");
+        document.write(`<p>De naam ${naam} bevindt zich op positie: ${namen.indexOf(naam)}</p>`);
+        
+        // part 3
+        const volledigenaam = prompt("wat is je volledige naam(voormaan achternaam)?");
+        const stringnaam = volledigenaam.split(" ");
+        stringnaam.reverse();
+        const omgedraaidenaam = stringnaam.join(" ");
+        document.write(`<p>Jouw naam genoteerd als familienaam voornaam is ${omgedraaidenaam}</p>`)
+    </script>
+</body>
+</html>

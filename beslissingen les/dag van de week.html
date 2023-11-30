@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const dag = new Date().getDay();
+        const dagen = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"]
+
+        document.write(`<p>Vandaag is "${dagen[dag]}".</p>`)
+        if (dagen === "maandag" || "dinsdag" || "woensdag" || "donderdag" || "vrijdag") {
+            document.write(`<p>Het is een werkdag, aan de slag dus.</p>`)
+        } else
+            document.write(`<p>Het is weekend, even bekomen</p>`)
+    </script>
+</body>
+</html>
